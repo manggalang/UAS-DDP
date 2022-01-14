@@ -9,7 +9,7 @@ float attendance[100], averageTaskValue[100], middleExam[100],finalExam[100], fi
 
 void dataList() {
     for(int i = 0; i < id; i++) {
-        cout <<i+1<< "] Name : " << name[i]
+        cout <<i<< "] Name : " << name[i]
                 << ", Attendance : " << attendance[i]
                 << ", Average Task Value : " << averageTaskValue[i]
                 << ", Midddle Exam : " << middleExam[i]
@@ -79,7 +79,14 @@ int main() {
                 if (id == 0) {
                     cout << "Data is empty !";
                 } else {
-                    dataList();
+                    for(int i = 0; i < id; i++) {
+                        cout <<i+1<< "] Name : " << name[i]
+                                << ", Attendance : " << attendance[i]
+                                << ", Average Task Value : " << averageTaskValue[i]
+                                << ", Midddle Exam : " << middleExam[i]
+                                << ", Final Exam : " << finalExam[i]
+                                << ", Final Value : " << finalValue[i] << endl;
+                    }
                     cout << "\nSuccsesfully display data!";
                 }
                 repeat();
