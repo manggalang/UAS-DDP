@@ -9,7 +9,7 @@ float attendance[100], averageTaskValue[100], middleExam[100],finalExam[100], fi
 
 void dataList() {
     for(int i = 0; i < id; i++) {
-        cout <<i<< "] Name : " << name[i]
+        cout <<i+1<< "] Name : " << name[i]
                 << ", Attendance : " << attendance[i]
                 << ", Average Task Value : " << averageTaskValue[i]
                 << ", Midddle Exam : " << middleExam[i]
@@ -226,7 +226,8 @@ int main() {
 			case 6:
 			    system("clear");
 			    cout << "\nSuccsesfully Exit Program";
-			    break;
+                programRepeat = "Exit";
+                break;
             
             default :
                 cout << "\n404 list not found!";
